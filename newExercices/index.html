@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>D3 and the DOM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Notes</h1>
+        <div id="notes">
+            <p class="note">
+                Hacer mercado
+            </p>
+            <p class="note">Cocinar</p>
+            <p class="note">Ir al cine</p>
+        </div>
+        <div class="preview__container">
+            <p class="preview show"></p>
+        </div>
+        <form action="" id="new-note">
+        <input type="text">
+        <button>
+            Add Note
+        </button>
+        <button class="remove" style="background-color: red;">Remove Note</button>
+        <button class="lucky">I'm feeling lucky</button>
+    </form>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

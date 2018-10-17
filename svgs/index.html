@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <svg>
+        <rect x="25" y="25" width="200" height="200" />
+    </svg>
+    <svg width="200px" height="200px">
+        <line x1="50" y1="50" x2="200" y2="200" stroke-width="4px" stroke="black" />
+    </svg>
+    <svg>
+        <polyline points="50,150 50,200 200,200 200,100" />
+    </svg>
+    <svg>
+        <circle cx="125" cy="125" r="75" />
+    </svg>
+    <svg height="150" width="500">
+            <ellipse cx="240" cy="100" rx="220" ry="30" style="fill:purple" />
+            <ellipse cx="220" cy="70" rx="190" ry="20" style="fill:lime" />
+            <ellipse cx="210" cy="45" rx="170" ry="15" style="fill:yellow" />
+    </svg>
+    <svg height="210" width="500">
+            <polygon points="100,10 40,198 190,78 10,78 160,198"
+            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;" />
+    </svg>
+    <svg height="200" width="500">
+            <polyline points="20,20 40,25 60,40 80,120 120,140 200,180"
+            style="fill:none;stroke:black;stroke-width:3" />
+    </svg>
+    <svg height="400" width="450">
+        <path id="lineAB" d="M 100 350 l 150 -300" stroke="red" stroke-width="3" fill="none" />
+            <path id="lineBC" d="M 250 50 l 150 300" stroke="red" stroke-width="3" fill="none" />
+            <path d="M 175 200 l 150 0" stroke="green" stroke-width="3" fill="none" />
+            <path d="M 100 350 q 150 -300 300 0" stroke="blue" stroke-width="5" fill="none" />
+            <!-- Mark relevant points -->
+            <g stroke="black" stroke-width="3" fill="black">
+            <circle id="pointA" cx="100" cy="350" r="3" />
+            <circle id="pointB" cx="250" cy="50" r="3" />
+            <circle id="pointC" cx="400" cy="350" r="3" />
+            </g>
+            <!-- Label the points -->
+            <g font-size="30" font-family="sans-serif" fill="black" stroke="none" text-anchor="middle">
+            <text x="100" y="350" dx="-30">A</text>
+            <text x="250" y="50" dy="-10">B</text>
+            <text x="400" y="350" dx="30">C</text>
+            </g>
+    </svg>
+    <svg height="60" width="200">
+            <text x="0" y="15" fill="red" transform="rotate(30 20,40)">I love SVG</text>
+    </svg>
+    <svg height="110" width="110">
+        <defs>
+            <filter id="f1" x="0" y="0">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+            </filter>
+        </defs>
+        <rect width="90" height="90" stroke="green" stroke-width="3"
+        fill="yellow" filter="url(#f1)" />
+    </svg>
+    <svg height="120" width="120">
+        <defs>
+            <filter id="f1" x="0" y="0" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+            <feBlend in="SourceGraphic" in2="offOut" mode="normal" />
+            </filter>
+        </defs>
+        <rect width="90" height="90" stroke="green" stroke-width="3"
+        fill="yellow" filter="url(#f1)" />
+    </svg>
+    <svg height="150" width="400">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+    </svg>
+    <svg height="150" width="500">
+        <defs>
+            <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color:rgb(255,255,255);
+            stop-opacity:0" />
+            <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+            </radialGradient>
+        </defs>
+        <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+    </svg>
+</body>
+</html>
