@@ -85,7 +85,6 @@ let button = d3.select('.add-quote').on('click', () => {
         .selectAll('li')
         .data(newQuotes, d => d.quote);
 
-
         listItems
         .enter()
         .append('li')

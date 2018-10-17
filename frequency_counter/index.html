@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Frequency Count</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header> 
+    <h1>Letter Analyzer</h1>
+    <form>
+      <input type="text">
+      <button type="submit">Count the Letters!</button>
+      <button id="reset" type="button">Reset</button>
+    </form>
+  </header>
+  <div class="analysis noshow">
+    <h2 id="phrase">Analyis of: <span class="phrase-number"></span></h2>
+    <h4 id="count">(New Characters: <span class="characters-number"></span>)</h4>
+    <div id="letters">
+      <!-- <div class="letter">a</div>
+      <div class="letter written">b</div>
+      <div class="letter">c</div>
+      <div class="letter">d</div>
+      <div class="letter written">e</div>
+      <div class="letter">11</div>
+      <div class="letter written">24</div> -->
+    </div>
+  </div>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
