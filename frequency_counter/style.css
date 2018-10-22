@@ -33,12 +33,16 @@ form > button:hover {
   display: inline-block;
   text-align: center;
   background-color: #ffc800;
-  vertical-align: bottom;
+  padding: 10px;
+  margin: 2px;
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: black;
 }
 
 .new {
   font-size: 1.5em;
-  color: #ffffff;
+  color: white;
 }
 
 #phrase {
@@ -56,13 +60,7 @@ form > button:hover {
   display: flex;
   flex-grow: 1;
   justify-content: center;
-}
-
-.letter {
-  padding: 10px;
-  margin: 2px;
-  margin-top: 30px;
-  color: white;
+  align-items: flex-end;
 }
 
 .written {
