@@ -4,3 +4,9 @@ svg{
     height: 800px;
     /* background-color: yellow; */
 }
+
+text {
+    text-anchor: middle;
+    transform: rotate(90deg)
+    align-baseline: middle;
+}
